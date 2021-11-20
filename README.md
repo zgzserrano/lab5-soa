@@ -69,6 +69,7 @@ The possibilities of Camel are endless; you can propose your idea for a :gift:.
 Manifest your intention first by a PR updating this `README.md` with your goal.
 If you desist of your goal, release it by a PR so other fellow can try it.
 
-|NIA    | User name | Repo | Improvement | Score  |
+|User name | NIA | Status |  Improvement | Score  |
 |-------|-----------|------|-------------|--------|
+|[UNIZAR-30246-WebEngineering](https://github.com/UNIZAR-30246-WebEngineering/lab5-soa) | 30246 | [![Build Status](https://github.com/UNIZAR-30246-WebEngineering/lab5-soa/actions/workflows/ci.yml/badge.svg)](https://github.com/UNIZAR-30246-WebEngineering/lab5-soa/actions/workflows/ci.yml) | [instructions](https://github.com/UNIZAR-30246-WebEngineering/lab5-soa/wiki)
 |       |           |      |             |        | 
