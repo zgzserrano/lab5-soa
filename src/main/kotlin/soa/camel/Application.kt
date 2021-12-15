@@ -41,8 +41,19 @@ class Router(meterRegistry: MeterRegistry) : RouteBuilder() {
 
     private val perKeywordMessages = TaggedCounter("per-keyword-messages", "keyword", meterRegistry)
 
+
     override fun configure() {
         from(DIRECT_ROUTE)
+        .process { exchange ->
+            val regex = "max:[0-9]+".toRegex()
+            var keywords = exchange.`in`.getHeader("keywords").toString()
+            regex.find(keywords)?.let { match ->
+                val max = match.value.split(":")[1].toInt()
+                keywords = keywords.replace(regex, "")
+                keywords += "?count=$max"
+                exchange.`in`.setHeader("keywords", keywords)
+            }
+        }
             .toD("twitter-search:\${header.keywords}")
             .wireTap(LOG_ROUTE)
             .wireTap(COUNT_ROUTE)
