@@ -55,8 +55,7 @@ Note: the Twitter Search endpoint is configured using URI syntax `twitter-search
 
 Proposed:
 
-- [Use Camel for providing a REST endpoint for queries](https://camel.apache.org/components/latest/rest-component.html); current client should work.
-- [Use Camel for providing a WebSocked endpoint for queries](https://camel.apache.org/components/latest/websocket-jsr356-component.html); a websocket client is required.
+- [Use Camel for providing a WebSocket endpoint for queries](https://camel.apache.org/components/latest/websocket-jsr356-component.html); a websocket client is required.
 - [Use Camel for keeping a copy of responses in a database](https://camel.apache.org/components/latest/jdbc-component.html)
 - [Enrich the response with moustache](https://camel.apache.org/components/latest/eips/content-enricher.html); remove moustache from the client.
 - [Create an operator "-" to filter out tweets that contain a keyword](https://camel.apache.org/components/latest/eips/filter-eip.html)
@@ -81,3 +80,4 @@ If you desist of your goal, release it by a PR so other fellow can try it.
 |[Andoni Salcedo](https://github.com/AndoniSalcedo/lab5-soa/tree/work) | 785649 | [![Build Status](https://github.com/AndoniSalcedo/lab5-soa/actions/workflows/ci.yml/badge.svg)](https://github.com/AndoniSalcedo/lab5-soa/actions/workflows/ci.yml) | [Solution](https://github.com/AndoniSalcedo/lab5-soa/blob/work/src/main/kotlin/soa/camel/Application.kt) |
 |[Alejandro Artal](https://github.com/Alejandro-Artal/lab5-soa/tree/work) | 775929 | [![Build Status](https://github.com/Alejandro-Artal/lab5-soa/actions/workflows/ci.yml/badge.svg)](https://github.com/Alejandro-Artal/lab5-soa/actions/workflows/ci.yml) | [Solution](https://github.com/Alejandro-Artal/lab5-soa/blob/work/src/main/kotlin/soa/camel/Application.kt)
 |[Jaime Conchello](https://github.com/jaimecb/lab5-soa/tree/work) | 776012 | [![Build Status](https://github.com/jaimecb/lab5-soa/actions/workflows/ci.yml/badge.svg)](https://github.com/jaimecb/lab5-soa/actions/workflows/ci.yml) | [Solution](https://github.com/jaimecb/lab5-soa/blob/work/src/main/kotlin/soa/camel/Application.kt) |        | 
+|[Fernando Serrano](https://github.com/Feer93/lab5-soa/tree/work) | 774840 | [![Build Status](https://github.com/Feer93/lab5-soa/actions/workflows/ci.yml/badge.svg)](https://github.com/Feer93/lab5-soa/actions/workflows/ci.yml) | [Solution](https://github.com/Feer93/lab5-soa/blob/work/src/main/kotlin/soa/camel/Application.kt)| [Rest EndPoint](https://github.com/Feer93/lab5-soa/tree/gift) :gift:   
